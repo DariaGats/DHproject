@@ -268,6 +268,22 @@ a:hover, a:focus-visible { color: var(--accent); }
 }
 .two-cols p { margin: 0 0 14px; text-align: justify; hyphens: auto; }
 
+.portrait { margin: 0 0 28px; break-inside: avoid-column; }
+.portrait img {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  filter: sepia(0.35);
+}
+.portrait figcaption {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
 /* why this project */
 .why { padding: 36px 0 0; text-align: center; }
 .why .label {
