@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Method &middot; Endings that turn</title>
+  <meta name="description" content="Corpus, definitions, hypotheses and tools of the project on the last passages of O. Henry's The Four Million.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+
+    <div class="topbar">
+      <p>Digital Humanities and U.S. Literary Studies</p>
+      <p>The Four Million &middot; 1906 &middot; 25 stories</p>
+    </div>
+
+    <p class="site-title"><a href="index.html">Endings that turn</a></p>
+
+    <nav class="sectionbar" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="method.html" aria-current="page">Method</a></li>
+        <li><a href="charts.html">Charts</a></li>
+        <li><a href="limits.html">Limits</a></li>
+        <li><a href="teachers.html">For teachers</a></li>
+      </ul>
+    </nav>
+
+    <main class="paper">
+      <header class="paper-head">
+        <h1>Method</h1>
+      </header>
+
+      <div class="two-cols">
+        <section>
+          <h2>Corpus</h2>
+          <p>The corpus consists of all 25 stories of <cite>The Four Million</cite>, taken from Project Gutenberg (no. 2776), where the text is in the public domain. Each story is saved as a separate plain-text file, without its title and the licence text. The corpus is small and every story has been read in full: it is smart data, not big data.</p>
+        </section>
+
+        <section>
+          <h2>Definitions</h2>
+          <p>Four terms were fixed before the analysis.</p>
+          <p>The <strong>final passage</strong> is the last paragraph of a story; as a robustness check, the last whole paragraphs that together reach at least 100 words are also measured.</p>
+          <p><strong>Voice</strong> describes whether an ending is dialogue, narration or mixed, or quoted text, such as a newspaper item, a line of a menu or a note. Mixed endings are counted separately.</p>
+          <p><strong>Shorter</strong> means shorter than the other paragraphs of the same story, not than the story as a whole.</p>
+          <p><strong>Twist</strong> is judged by three tests:</p>
+          <ol>
+            <li><em>Reversal of expectations</em>: the ending contradicts what the reader expected.</li>
+            <li><em>Reinterpretation</em>: the ending changes the meaning of events that came before.</li>
+            <li><em>Withheld information</em>: the ending reveals a fact that the story had kept hidden.</li>
+          </ol>
+          <p>A story has a twist when it passes at least two tests. One borderline story, &ldquo;The Cop and the Anthem,&rdquo; passes only the first test, but the reversal is so clear that it is counted as a twist and marked as borderline in the data.</p>
+          <p>Unlike the word counts, the coding of the twist is an interpretation. It records what the researcher takes from the text, so in Drucker&rsquo;s terms it is capta and not data.</p>
+        </section>
+
+        <section>
+          <h2>Hypotheses</h2>
+          <p>The project tests three hypotheses, which can be disproved.</p>
+          <ol>
+            <li>The final passage is shorter than the other passages of the same story.</li>
+            <li>Sentences in the final passage are shorter on average.</li>
+            <li>In most stories the ending is dialogue, not narration.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Tools and procedure</h2>
+          <p>Each story is divided into four documents in <a href="https://voyant-tools.org" target="_blank" rel="noopener">Voyant Tools</a>: the ending, the rest, and, as a robustness check, the last whole paragraphs with at least 100 words (LAST100) and the remaining part of the story (REST100). The window never cuts a paragraph, so it can be longer than 100 words. The Summary and Documents tools give the word count and the average sentence length, which are recorded in <a href="https://docs.google.com/spreadsheets/d/13QcV8ekTLmVka09b3oOE6ET5MGhPaXe_-_OAqjcnrGM/edit?gid=0#gid=0" target="_blank" rel="noopener">Google Sheets</a> (view only); a measure that Voyant does not offer is calculated by hand.</p>
+          <p>Words are counted between spaces. Voyant counts the parts of a hyphenated word separately, so its totals are a little higher: &ldquo;By Courier&rdquo; has 1,415 words here and 1,435 in Voyant.</p>
+          <p>Voyant cannot tell narration from speech, so the voice of each ending is coded manually, twice, one week apart, and any discrepancy is re-examined. Because dialogue tends to produce short sentences, sentence length is measured separately for dialogue endings and narration endings, so that this effect does not distort the result.</p>
+          <p>Finally, three or four stories are read closely, including at least one counterexample.</p>
+        </section>
+      </div>
+
+      <figure class="screen">
+        <img src="images/voyant-by-courier.png" alt="Screenshot of Voyant Tools with four panels for &ldquo;By Courier&rdquo;: a word cloud (lady, young, tell, said), the text of the ending, a line chart of word frequencies, and a table of four documents (the ending with 19 words, the last 100 with 133, the rest with 1,416, and the rest 100 with 1,302). The menu is in Italian." width="1902" height="821">
+        <figcaption>&ldquo;By Courier&rdquo; in Voyant Tools, divided into four documents: the ending, the last whole paragraphs with at least 100 words (LAST100), the rest of the story, and the rest without those paragraphs (REST100). The table gives the words and the average sentence length of each document. Screenshot by the author.</figcaption>
+      </figure>
+    </main>
+
+    <footer class="site-footer">
+      <p>Corpus: <cite>The Four Million</cite>, Project Gutenberg no. 2776.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
