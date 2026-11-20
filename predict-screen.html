@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Read and predict on screen &middot; Endings that turn</title>
+  <meta name="description" content="Read and predict stage of the By Courier lesson, on one screen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hs { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 1.5vh 3vw; max-width: 1700px; margin: 0 auto; }
+    .hs h1 { font-family: var(--display); font-size: clamp(1.5rem, 2.8vw, 2.6rem); text-align: center; margin: 0 0 .5em; }
+    .cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2vw; align-items: start; }
+    .col { background: var(--cream); border: 1px solid var(--ink); padding: .9em 1.1em; font-size: clamp(.8rem, 1.12vw, 1.08rem); line-height: 1.4; }
+    .col h2 { font-family: var(--display); font-size: 1.25em; margin: 0 0 .35em; }
+    .col h3 { font-family: var(--sans); font-size: .8em; text-transform: uppercase; letter-spacing: .07em; color: var(--accent); margin: .8em 0 .25em; }
+    .col p { margin: 0 0 .45em; }
+    .col ol, .col ul { margin: 0 0 .4em; padding-left: 1.3em; }
+    .col li { margin: 0 0 .25em; }
+    .btns { display: flex; justify-content: center; gap: 1em; flex-wrap: wrap; margin-top: 1em; }
+    .btns a { font-family: var(--sans); font-weight: 600; text-decoration: none; border: 2px solid var(--ink); padding: .5em 1.1em; color: var(--ink); background: var(--cream); font-size: clamp(.85rem, 1.1vw, 1.05rem); }
+    .btns a.main { background: var(--ink); color: var(--cream); }
+    @media (max-width: 900px) { .cols { grid-template-columns: 1fr; } .hs { min-height: 0; } .col { font-size: 1rem; } }
+    .big { font-size: clamp(1.3rem, 2.4vw, 2.3rem) !important; line-height: 1.4; }
+    .words { display: flex; flex-wrap: wrap; gap: .6em; margin-top: .8em; }
+    .words span { font-family: var(--display); border: 2px solid var(--ink); padding: .3em .9em; font-size: clamp(1.4rem, 2.6vw, 2.4rem); background: var(--paper); }
+    .tm { font-family: var(--sans); font-weight: 600; color: var(--accent); text-align: center; font-size: clamp(1rem, 1.6vw, 1.5rem); margin: -.3em 0 1em; }
+    .two { grid-template-columns: 1fr 1fr !important; }
+  </style>
+</head>
+<body>
+  <main class="hs">
+    <h1>2. Read and predict</h1>
+    <p class="tm">15 minutes &middot; alone, then whole class</p>
+    <div class="cols two">
+      <section class="col big">
+        <h2>What to do</h2>
+        <ol>
+          <li>Read <strong>part 1</strong>.</li>
+          <li>Write your prediction with a clue from the text (Handout 1, C).</li>
+          <li>Then read <strong>part 2</strong>.</li>
+        </ol>
+      </section>
+      <section class="col big">
+        <h2>My prediction</h2>
+        <p>What is in the letter, and will she forgive him?</p>
+        <p><em>I think ____________ because the text says ____________.</em></p>
+      </section>
+    </div>
+    <div class="btns">
+      <a class="main" href="handout-1-screen.html">Next: Handout 1 on screen</a>
+      <a href="warmup-screen.html">Back to the warm-up</a>
+      <a href="lesson-slide.html">Back to the lesson</a>
+    </div>
+  </main>
+</body>
+</html>
